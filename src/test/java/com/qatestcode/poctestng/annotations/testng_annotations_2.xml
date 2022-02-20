@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestAnnotationsDemo2">
+  <test thread-count="5" name="TestAttributes">
+  <parameter name="shortName" value="ATNM"></parameter>
+  <parameter name="userStatus" value="Active"></parameter>
+    <classes>
+      <class name="com.qatestcode.poctestng.annotations.TestAnnotationDemo2"/>
+    </classes>
+  </test> <!-- TestAttributes -->
+</suite> <!-- TestAnnotationsDemo2 -->

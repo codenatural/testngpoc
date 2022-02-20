@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="My Test Runs">
+	<groups>
+		<run>
+			<include name="smoke" />
+			<include name="regression" />
+		</run>
+	</groups>
+	<test thread-count="1" name="Firefox">
+		<classes>
+			<class name="com.qatestcode.poctestng.flow.TestNGAnnotationsDemo" />
+			<class name="com.qatestcode.poctestng.flow.TestClassOne" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Chrome">
+		<classes>
+			<class name="com.qatestcode.poctestng.flow.TestClassTwo" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Safari">
+		<classes>
+			<class
+				name="com.qatestcode.poctestng.flow.TestClassThree" />
+		</classes>
+	</test>
+	<test thread-count="1" name="Edge">
+		<classes>
+			<class name="com.qatestcode.poctestng.flow.TestClassFour" />
+		</classes>
+	</test>
+</suite>
+

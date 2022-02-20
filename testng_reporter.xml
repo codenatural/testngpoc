@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ReporterTestSuite">
+	<listeners>
+		<listener
+			class-name="com.qatestcode.poctestng.listeners.IReporterClass"></listener>
+	</listeners>
+	<test thread-count="5" name="TestReporter">
+		<classes>
+			<class
+				name="com.qatestcode.poctestng.listeners.ReporterDemoTest" />
+		</classes>
+	</test> <!-- TestReporter -->
+</suite> <!-- ReporterTestSuite -->

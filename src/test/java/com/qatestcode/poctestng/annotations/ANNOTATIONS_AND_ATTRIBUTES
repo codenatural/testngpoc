@@ -1,0 +1,14 @@
+For all annotations following does apply
+
+dependsOnGroups : The list of groups this method depends on.
+It means Test001 will start execution only after all the tests in all the groups.
+It depends on executed successfully. 
+If any of the tests in groups specified via dependsOnGroups attribute failed,
+then test1 will be skipped. 
+
+
+dependsOnMethods : The list of methods this method depends on. 
+enabled : Whether methods on this class/method are enabled.
+groups : The list of groups this class/method belongs to.
+onlyForGroups : Only for @BeforeMethod and @AfterMethod. If specified, then this setup/teardown method will only be invoked if the corresponding test method belongs to one of the listed groups. 
+
